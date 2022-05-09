@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace PalmManager
 {
-    public partial class Form1 : Form
+    public partial class Startup : Form
     {
-        public Form1()
+        public Startup()
         {
             InitializeComponent();
+            this.delayedWork();
+        }
+        private async Task delayedWork()
+        {
+            await Task.Delay(3000);
+            this.Visible = false;
+            var f2 = new Main();
+            f2.ShowDialog();
         }
     }
 }
