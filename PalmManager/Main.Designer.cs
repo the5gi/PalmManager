@@ -38,6 +38,7 @@
             this.currentdirused = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.setcustomdirbtn = new System.Windows.Forms.Button();
+            this.viewbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // installbtn
@@ -46,8 +47,9 @@
             this.installbtn.Name = "installbtn";
             this.installbtn.Size = new System.Drawing.Size(130, 23);
             this.installbtn.TabIndex = 1;
-            this.installbtn.Text = "Install Selected [0]";
+            this.installbtn.Text = "Install Selected";
             this.installbtn.UseVisualStyleBackColor = true;
+            this.installbtn.Click += new System.EventHandler(this.installbtn_Click);
             // 
             // addonlist
             // 
@@ -75,6 +77,7 @@
             this.applist.Name = "applist";
             this.applist.Size = new System.Drawing.Size(130, 21);
             this.applist.TabIndex = 4;
+            this.applist.SelectedIndexChanged += new System.EventHandler(this.applist_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -87,7 +90,7 @@
             // 
             // customdir
             // 
-            this.customdir.Location = new System.Drawing.Point(448, 141);
+            this.customdir.Location = new System.Drawing.Point(448, 170);
             this.customdir.Name = "customdir";
             this.customdir.Size = new System.Drawing.Size(340, 20);
             this.customdir.TabIndex = 6;
@@ -111,18 +114,30 @@
             // 
             // setcustomdirbtn
             // 
-            this.setcustomdirbtn.Location = new System.Drawing.Point(563, 112);
+            this.setcustomdirbtn.Location = new System.Drawing.Point(563, 141);
             this.setcustomdirbtn.Name = "setcustomdirbtn";
             this.setcustomdirbtn.Size = new System.Drawing.Size(130, 23);
             this.setcustomdirbtn.TabIndex = 9;
             this.setcustomdirbtn.Text = "Set Custom Dir";
             this.setcustomdirbtn.UseVisualStyleBackColor = true;
+            this.setcustomdirbtn.Click += new System.EventHandler(this.setcustomdirbtn_Click);
+            // 
+            // viewbtn
+            // 
+            this.viewbtn.Location = new System.Drawing.Point(563, 112);
+            this.viewbtn.Name = "viewbtn";
+            this.viewbtn.Size = new System.Drawing.Size(130, 23);
+            this.viewbtn.TabIndex = 10;
+            this.viewbtn.Text = "View Dir";
+            this.viewbtn.UseVisualStyleBackColor = true;
+            this.viewbtn.Click += new System.EventHandler(this.viewbtn_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.viewbtn);
             this.Controls.Add(this.setcustomdirbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.currentdirused);
@@ -152,5 +167,6 @@
         private System.Windows.Forms.TextBox currentdirused;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button setcustomdirbtn;
+        private System.Windows.Forms.Button viewbtn;
     }
 }

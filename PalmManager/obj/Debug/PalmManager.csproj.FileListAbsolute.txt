@@ -1,7 +1,6 @@
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\PalmManager.exe.config
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\PalmManager.exe
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\PalmManager.pdb
-C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.csproj.AssemblyReference.cache
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.csproj.SuggestedBindingRedirects.cache
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.Properties.Resources.resources
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.Startup.resources
@@ -10,3 +9,6 @@ C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.exe
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.pdb
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.Main.resources
+C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.csproj.CopyComplete
