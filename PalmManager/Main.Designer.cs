@@ -153,7 +153,7 @@
             // 
             this.vertext.AutoSize = true;
             this.vertext.BackColor = System.Drawing.Color.Transparent;
-            this.vertext.Location = new System.Drawing.Point(630, 396);
+            this.vertext.Location = new System.Drawing.Point(630, 412);
             this.vertext.Name = "vertext";
             this.vertext.Size = new System.Drawing.Size(108, 13);
             this.vertext.TabIndex = 12;

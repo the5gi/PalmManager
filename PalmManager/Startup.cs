@@ -24,6 +24,7 @@ namespace PalmManager
         {
 
             InitializeComponent();
+            vertext.Text = "Palm Manager v" + ver;
             if (File.Exists(tempdir + "list.json"))
             {
                 File.Delete(tempdir + "list.json");
