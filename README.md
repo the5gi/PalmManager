@@ -5,12 +5,17 @@
        
 ```
 Todo: 
-1. Make application Install Mods.
-2. Add Public Mod Archive for unverified mod creators.
-3. Make Mod Website for manual downloads.
+1. Add Public Mod Archive for unverified mod creators.
+2. Make Mod Website for manual downloads.
 ```
 
 ```
 Done:
 1. Make Repository
+2. Make application Install Mods.
+```
+
+```
+Working Games/Apps:
+Gorilla Tag
 ```
