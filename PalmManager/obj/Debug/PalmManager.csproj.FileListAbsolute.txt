@@ -12,3 +12,4 @@ C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.csproj.CopyComplete
+C:\Users\Alec\3D Objects\Projects\PalmManager\PalmManager\obj\Debug\PalmManager.csproj.AssemblyReference.cache

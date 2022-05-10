@@ -4,10 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,6 +63,10 @@ namespace PalmManager
         {
             this.Visible = false;
             System.Windows.Forms.MessageBox.Show("Outdated Version. Updating...", "Info");
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://github.com/the5gi/PalmManager/releases/download/" + File.ReadAllText(tempdir + "latestver").ToString().Trim() + "/PalmManager.exe", AppDomain.CurrentDomain.BaseDirectory + "latestver");
+            }
             System.Environment.Exit(0);
         }
     }

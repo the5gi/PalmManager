@@ -39,6 +39,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.setcustomdirbtn = new System.Windows.Forms.Button();
             this.viewbtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.vertext = new System.Windows.Forms.Label();
+            this.dirshow = new System.Windows.Forms.OpenFileDialog();
+            this.diropen = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // installbtn
@@ -67,8 +72,9 @@
             this.sourcebtn.Name = "sourcebtn";
             this.sourcebtn.Size = new System.Drawing.Size(130, 23);
             this.sourcebtn.TabIndex = 3;
-            this.sourcebtn.Text = "Show Source";
+            this.sourcebtn.Text = "show source (broken)";
             this.sourcebtn.UseVisualStyleBackColor = true;
+            this.sourcebtn.Click += new System.EventHandler(this.sourcebtn_Click);
             // 
             // applist
             // 
@@ -92,7 +98,7 @@
             // 
             this.customdir.Location = new System.Drawing.Point(448, 170);
             this.customdir.Name = "customdir";
-            this.customdir.Size = new System.Drawing.Size(340, 20);
+            this.customdir.Size = new System.Drawing.Size(310, 20);
             this.customdir.TabIndex = 6;
             // 
             // currentdirused
@@ -132,11 +138,50 @@
             this.viewbtn.UseVisualStyleBackColor = true;
             this.viewbtn.Click += new System.EventHandler(this.viewbtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(503, 196);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // vertext
+            // 
+            this.vertext.AutoSize = true;
+            this.vertext.BackColor = System.Drawing.Color.Transparent;
+            this.vertext.Location = new System.Drawing.Point(630, 396);
+            this.vertext.Name = "vertext";
+            this.vertext.Size = new System.Drawing.Size(108, 13);
+            this.vertext.TabIndex = 12;
+            this.vertext.Text = "Palm Manager v0.0.0";
+            // 
+            // dirshow
+            // 
+            this.dirshow.DefaultExt = "exe";
+            this.dirshow.Filter = "Gorilla Tag EXE (Gorilla Tag*.exe)|Gorilla Tag.exe";
+            // 
+            // diropen
+            // 
+            this.diropen.Location = new System.Drawing.Point(764, 170);
+            this.diropen.Name = "diropen";
+            this.diropen.Size = new System.Drawing.Size(24, 20);
+            this.diropen.TabIndex = 13;
+            this.diropen.Text = "...";
+            this.diropen.UseVisualStyleBackColor = true;
+            this.diropen.Click += new System.EventHandler(this.diropen_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.diropen);
+            this.Controls.Add(this.vertext);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.viewbtn);
             this.Controls.Add(this.setcustomdirbtn);
             this.Controls.Add(this.label2);
@@ -149,9 +194,11 @@
             this.Controls.Add(this.installbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Palm Manager";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +215,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button setcustomdirbtn;
         private System.Windows.Forms.Button viewbtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label vertext;
+        private System.Windows.Forms.OpenFileDialog dirshow;
+        private System.Windows.Forms.Button diropen;
     }
 }
